@@ -13,6 +13,7 @@ This code is for the front-end we will be using with our movie recommendations e
 alt text
 
 Features added:
+![](images/newFrontEnd)
 
 Header Section Controls
 Visitor will enter his email address. In return our WebServer will send an authentication token to the email address provided
