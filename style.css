@@ -17,6 +17,7 @@
  hgroup,
  nav,
  section,
+
  summary {
    display: block; }
  
@@ -240,6 +241,11 @@
    font-style: normal; }
  
  p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
    margin-top: 0; }
  
  form input, form textarea, form select {
@@ -528,6 +534,7 @@
  
  
  .container {
+   background: #7e1c65;
    margin-right: auto;
    margin-left: auto;
    padding-left: 15px;
@@ -1409,7 +1416,9 @@
    border-radius: 5px; }
    .main-navigation .menu-toggle, .main-navigation .menu, .main-navigation .search-form {
      display: inline-block;
-     vertical-align: middle; }
+     vertical-align: middle;
+
+    }
    .main-navigation .menu-toggle {
      color: #333;
      border: none;
@@ -1491,7 +1500,10 @@
      -webkit-transition: .3s ease;
              transition: .3s ease; }
      .main-navigation .search-form button.active {
-       background-color: #f0f0f0; }
+       background-color: #f0f0f0; 
+       padding: 80px ;
+
+      }
  
  .mobile-navigation {
    clear: both;
@@ -1519,7 +1531,7 @@
  .main-content .container {
    background: white;
    border-radius: 5px;
-   padding: 30px; }
+   padding: 60px; }
  
  .section-title {
    font-size: 30px;
@@ -1556,6 +1568,9 @@
          color: #84878d; }
  
  .no-bullet {
+  margin-left: 0;
+  text-align: left;
+
    list-style: none; }
  
  .leading {
@@ -1612,6 +1627,7 @@
          clear: both; } }
      .movie-list .movie .movie-poster {
        border-radius: 5px;
+       height:40 px;
        overflow: hidden;
        margin-bottom: 20px;
        border: 1px solid transparent; }
@@ -1670,6 +1686,7 @@
  .site-footer {
    padding: 50px 0; }
    .site-footer .widget {
+           margin-left: 0;
      margin-bottom: 30px; }
    .site-footer .widget-title {
      color: #bec1c8;
@@ -1850,6 +1867,7 @@
        margin-right: 0;
      }
      .side-widget {
+      margin-left: 0;
        width: 57px;
        z-index: 9;
        background-color: #fff;
@@ -1858,7 +1876,6 @@
        right: 0;
        top: 52%;
        text-align: center;
-       margin-right: -45px;
        -webkit-transition: all 0.2s ease-in-out;
        transition: all 0.2s ease-in-out;
        -webkit-transform: rotate(90deg);
@@ -1890,9 +1907,12 @@
        letter-spacing: -0.5px;
      }
      .widget-close:hover {
+       left:1;  
        color: #ccc;
      }
      .widget-close {
+      left:1;  
+
        color: #636363;
      }
      .widget-close {
@@ -1967,13 +1987,14 @@
        height: 57px;
        border-radius: 0;
      }
-     .modal-content .btn-primary {
+     .btn-primary {
        width: 175px;
        background-color: #ef9919;
        border: 0;
      }
-     .modal-content .btn-primary:hover {
-       background-color: #0073b7;
+      .btn-primary:hover {
+       background-color: #84878d;
+
        border: 0;
      }
      .modal-content .logorow {
@@ -2022,4 +2043,223 @@
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+
+.navheader{
+  padding-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containers input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Hide the browser's default checkbox */
+.containers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.containers input:checked ~ .checkmark {
+  background-color: #ffaa3c;
+}
+
+
+.new{
+  width: 17px;
+  left:20;
+  padding: 10px ;
+       visibility: visible;
+       opacity: 1;
+}
+
+.modal-content {
+  background-color: rgba(38, 38, 40, 0.92);
+  color: #fff;
+  padding: 20px 100px;
+}
+.btn-primary {
+  width: 175px;
+  background-color: #ef9919;
+  border: 0;
+}
+
+.containers {
+  width:10 px;
+
+  padding-right: 60px;
+  margin-top: 100 px;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1;
+  display: block;
+  position: relative;
+  left:50;
+  padding-left: 35px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 22px;
+}
+ 
+.container {
+  background: #7e1c65;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 11%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+
+    text-align: center;
+  }
+
+  .column2 {
+    left:300 px;
+    width: 97%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 180px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+  }
+
+
+/* Style the counter cards */
+.card2 {
+  background: #e9e5e5;
+top:0 px;
+height: 70%;;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 60px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left {
+  padding-top: 160px;
+
+  width: 10%;
+}
+
+.right {
+
+  padding-left: 60px;
+
+  width: 80%;
+  height: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

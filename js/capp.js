@@ -56,7 +56,8 @@ function getRandomMedia() {
 
         html_str += '</div>';
         html_str += '<div class="contact-form">';
-        html_str += '<input type="submit" value="Test" style="display: block;">';
+        html_str += '<input type="submit" value="My Rate" style="display: block;">';
+        
         html_str += '</div>';
 
         html_str += '</div>';

@@ -31,11 +31,11 @@
 		<img src="logo.png" width="90" height="60" alt="" class="logo">
 	</a>
 	<!-- ThinkBIG Logo End-->
-
-	<a href="#home">Home</a>
-	<a href="#about">About</a>
-	<a href="index.html">Movies Reviews</a>
-
+	<div class="navheader">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="index.html">Movies Reviews</a>
+	</div>
 	<form class="search-form" style="float: right">
 		<input id="search_input" type="text" placeholder="Search...">
 		<button type="button"><i class="fa fa-search"></i></button>
@@ -45,16 +45,83 @@
 
 <body onload="getRandomMedia()">
 
+	<header class="site-header">
+		<div class="container">
+		</div>
+	</header>
+	<div class="row">
+
+		<div class="column left">
+			<div class="card">
+
+				<h3>Movie Genre</h3>
+				<label class="containers"> Action
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">Drama
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">Fantasy
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">Horror
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">Adventure
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
 
 
-	<div id="site-content">
-		<header class="site-header">
-			<div class="container">
-				
-
+				<h3><br>Year</h3>
+				<label class="containers">2010
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">2011
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">2012
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">2013
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">2014
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="containers">2015
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label><label class="containers">2016
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label><label class="containers">2017
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				</label><label class="containers">2018
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<br>
 			</div>
+		</div>
+		<div class="new">
+			<input type="submit" class="btn btn-primary" disabled=disabled value="Filter">
+		</div>
 
-		</header>
+
+
+
 		<div class="side-widget open">
 			<div class="inner">
 				<button type="button" a class="btn btn-primary" id="get-started">Subscribe</a>
@@ -113,126 +180,111 @@
 				</div>
 		</section>
 		<!-- Subscribe End-->
-
-		<main class="main-content">
-			<div class="container">
-				<div class="page">
-						<div class="breadcrumbs">
-								<a href="#Home">Home</a>
-								<span>Movies Reviews</span>
+		<div class="column right">
+			<div class="card2">
+				<!main class="main-content">
+					<!div class="container">
+						<div class="page">
+							<div class="breadcrumbs">
+								<b>
+								<h1><span>Movies Reviews</span></h1>
+							</b>
 							</div>
-					<div class="filters">
-						<select name="#" id="#" placeholder="Choose Category">
-							<option value="#">Action</option>
-							<option value="#">Drama</option>
-							<option value="#">Fantasy</option>
-							<option value="#">Horror</option>
-							<option value="#">Adventure</option>
-						</select>
-						<select name="#" id="#">
-							<option value="#">2012</option>
-							<option value="#">2013</option>
-							<option value="#">2014</option>
-						</select>
 
 
+							<div id="media" class="movie-list">
+							</div> <!-- .movie-list -->
+
+						</div>
+						<div class="pagination">
+							<a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
+							<span class="page-number current">1</span>
+							<a href="#" class="page-number">2</a>
+							<a href="#" class="page-number">3</a>
+							<a href="#" class="page-number">4</a>
+
+							<a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
+						</div>
+						<!/div> <!-- .container -->
+
+			</div>
+		</div>
+	</div>
+</body>
+
+	<!/main> </div> </div>
+	
+	<div class ="row"></div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">About Us</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+							tempore vitae mollitia nesciunt saepe cupiditate</p>
 					</div>
-
-
-					<div id="media" class="movie-list">
-
-
-					</div> <!-- .movie-list -->
-
-
-
 				</div>
-				<div class="pagination">
-					<a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
-					<span class="page-number current">1</span>
-					<a href="#" class="page-number">2</a>
-					<a href="#" class="page-number">3</a>
-					<a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">Recent Review</h3>
+						<ul class="no-bullet">
+							<li>Lorem ipsum dolor</li>
+							<li>Sit amet consecture</li>
+							<li>Dolorem respequem</li>
+							<li>Invenore veritae</li>
+						</ul>
+					</div>
 				</div>
-			</div> <!-- .container -->
-		</main>
-
-
-
-
-
-
-		<footer class="site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2">
-						<div class="widget">
-							<h3 class="widget-title">About Us</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore vitae mollitia
-								nesciunt saepe cupiditate</p>
-						</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">Help Center</h3>
+						<ul class="no-bullet">
+							<li>Lorem ipsum dolor</li>
+							<li>Sit amet consecture</li>
+							<li>Dolorem respequem</li>
+							<li>Invenore veritae</li>
+						</ul>
 					</div>
-					<div class="col-md-2">
-						<div class="widget">
-							<h3 class="widget-title">Recent Review</h3>
-							<ul class="no-bullet">
-								<li>Lorem ipsum dolor</li>
-								<li>Sit amet consecture</li>
-								<li>Dolorem respequem</li>
-								<li>Invenore veritae</li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">Join Us</h3>
+						<ul class="no-bullet">
+							<li>Lorem ipsum dolor</li>
+							<li>Sit amet consecture</li>
+							<li>Dolorem respequem</li>
+							<li>Invenore veritae</li>
+						</ul>
 					</div>
-					<div class="col-md-2">
-						<div class="widget">
-							<h3 class="widget-title">Help Center</h3>
-							<ul class="no-bullet">
-								<li>Lorem ipsum dolor</li>
-								<li>Sit amet consecture</li>
-								<li>Dolorem respequem</li>
-								<li>Invenore veritae</li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-md-2">
+					<div class="widget">
+						<h3 class="widget-title">Social Media</h3>
+						<ul class="no-bullet">
+							<li>Facebook</li>
+							<li>Twitter</li>
+							<li>Google+</li>
+							<li>Pinterest</li>
+						</ul>
 					</div>
-					<div class="col-md-2">
-						<div class="widget">
-							<h3 class="widget-title">Join Us</h3>
-							<ul class="no-bullet">
-								<li>Lorem ipsum dolor</li>
-								<li>Sit amet consecture</li>
-								<li>Dolorem respequem</li>
-								<li>Invenore veritae</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="widget">
-							<h3 class="widget-title">Social Media</h3>
-							<ul class="no-bullet">
-								<li>Facebook</li>
-								<li>Twitter</li>
-								<li>Google+</li>
-								<li>Pinterest</li>
-							</ul>
-						</div>
-					</div>
+				</div>
 
-				</div> <!-- .row -->
+			</div> <!-- .row -->
 
-				<div class="colophon">Copyright 2014 Company name, Designed by Themezy. All rights reserved</div>
-			</div> <!-- .container -->
+			<div class="colophon">Copyright 2014 Company name, Designed by Themezy. All rights
+				reserved</div>
+		</div> <!-- .container -->
 
 		</footer>
 	</div>
-	<!-- Default snippet for navigation -->
+
+
+		<!-- Default snippet for navigation -->
 
 
 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/capp.js"></script>
-
-</body>
-
-</html>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/capp.js"></script>
