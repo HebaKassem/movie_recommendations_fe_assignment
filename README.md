@@ -9,10 +9,10 @@ This code is for the front-end we will be using with our movie recommendations e
 
 
 # Modifications:
-![alt text](img.png)
-![alt text](newFrontEnd.png)
-![alt text](newFrontEndBottom.png)
-![alt text](subscribe.png)
+![alt text](img.PNG)
+![alt text](newFrontEnd.PNG)
+![alt text](newFrontEndBottom.PNG)
+![alt text](subscribe.PNG)
 
 
 
