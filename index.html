@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-	<title>Movie Review | Review</title>
+	<title> ThinkBig </title>
 
 	<!-- Loading third party fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
@@ -23,56 +23,46 @@
 
 </head>
 
-<body onload="getRandomMedia()">
 
+
+<div id="navbar">
+	<!-- ThinkBIG Logo Start-->
+	<a href="http://think-big.solutions/" id="branding">
+		<img src="logo.png" width="90" height="60" alt="" class="logo">
+	</a>
+	<!-- ThinkBIG Logo End-->
+
+	<a href="#home">Home</a>
+	<a href="#about">About</a>
+	<a href="index.html">Movies Reviews</a>
+
+	<form class="search-form" style="float: right">
+		<input id="search_input" type="text" placeholder="Search...">
+		<button type="button"><i class="fa fa-search"></i></button>
+	</form>
+</div>
+
+
+<body onload="getRandomMedia()">
 
 
 
 	<div id="site-content">
 		<header class="site-header">
 			<div class="container">
+				
 
-				<!-- ThinkBIG Logo Start-->
-				<a href="http://think-big.solutions/" id="branding">
-					<img src="logo.png" width="130" height="100" alt="" class="logo">
-				</a>
-				<!-- ThinkBIG Logo End-->
-
-				<!-- Subscribe START-->
-				<div class="col-md-2" style="float: right">
-					<div class="contact-form">
-						<input type="submit" disabled=disabled value="Subscribe"
-							style="display: block; margin-bottom:14px; width: 100%; height:90px ">
-					</div>
-				</div>
-				<!-- Subscribe End-->
-
-				<!-- EMAIL & Authentication Token Handling START-->
-				<div class="col-md-2" style="float: right">
-					<div class="contact-form">
-						<input type="submit" value="Send Auth Token" style="display: block; margin-bottom:
-									   14px; width: 100%">
-
-						<input type="submit" value="Test Auth Token" style="display: block; width: 100%">
-					</div>
-				</div>
-
-				<div class="col-md-5" style="float: right">
-					<div class="contact-form">
-						<input id="email_input" type="text" class="email" placeholder="enter your email">
-						<input id="token_input" type="text" class="email" placeholder="enter your verification token">
-					</div>
-				</div>
-				<!-- EMAIL & Authentication Token Handling END-->
 			</div>
 
 		</header>
 		<div class="side-widget open">
 			<div class="inner">
-				<button type="button" a class="btn btn-primary" id="get-started">GetStarted</a>
+				<button type="button" a class="btn btn-primary" id="get-started">Subscribe</a>
 				</button>
 			</div>
 		</div>
+
+		<!-- Subscribe START-->
 		<section class="section triad-section">
 			<div id="popup-container">
 				<div id="popup-window">
@@ -82,9 +72,9 @@
 						<a href="#" class="your-class"></a>
 						<div>
 							<div class="row text-center">
-								<h1>GetStarted</h1>
+								<h1>Subscribe</h1>
 								<hr>
-								<p>Fill out the form below to get started today!</p>
+								<p>Fill out the form to get updated!</p>
 							</div>
 							<br>
 							<form action="" method="post" id="footer-form">
@@ -95,45 +85,23 @@
 									</div>
 								</div>
 
-									<br>
-									<div class="row">
-
-										<div class="col-md-6">
-											<input class="contact-form" name="last_name" id="last_name"
-												placeholder="Last Name *" required>
-										</div>
-									</div>
 								<br>
 								<div class="row">
 
-									<!-- EMAIL & Authentication Token Handling START-->
-
+									<div class="col-md-6">
+										<input class="contact-form" name="last_name" id="last_name"
+											placeholder="Last Name *" required>
+									</div>
+								</div>
+								<br>
+								<div class="row">
 
 									<div class="col-md-6">
 										<div class="contact-form">
-											<input id="email_input" type="text" class="email"
-												placeholder="email*"required>
+											<input id="email_input" type="text" class="email" placeholder="email*"
+												required>
 										</div>
 									</div>
-
-									<div class="col-md-3">
-										<div class="contact-form">
-											<input type="submit" disabled=disabled value="Send Auth Token"
-												style=" margin-bottom:14px; width: 100%"required>
-
-										</div>
-									</div>
-
-
-									<div class="col-md-6">
-										<div class="contact-form">
-											<input id="token_input" type="text" class="email"
-												placeholder="verification token*"><br>
-										</div>
-									</div>
-									<!-- EMAIL & Authentication Token Handling END-->
-
-
 								</div>
 								<center>
 									<input type="submit" class="btn btn-primary" disabled=disabled value="Submit">
@@ -144,12 +112,15 @@
 					</div>
 				</div>
 		</section>
+		<!-- Subscribe End-->
 
 		<main class="main-content">
 			<div class="container">
 				<div class="page">
-
-					<div class="breadcrumbs"><span>Movie Review</span></div>
+						<div class="breadcrumbs">
+								<a href="#Home">Home</a>
+								<span>Movies Reviews</span>
+							</div>
 					<div class="filters">
 						<select name="#" id="#" placeholder="Choose Category">
 							<option value="#">Action</option>
@@ -164,10 +135,7 @@
 							<option value="#">2014</option>
 						</select>
 
-						<form class="search-form" style="float: right">
-							<input id="search_input" type="text" placeholder="Search...">
-							<button type="button"><i class="fa fa-search"></i></button>
-						</form>
+
 					</div>
 
 
@@ -248,14 +216,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2">
-						<div class="widget">
-							<h3 class="widget-title">Newsletter</h3>
-							<form action="#" class="subscribe-form">
-								<input type="text" placeholder="Email Address">
-							</form>
-						</div>
-					</div>
+
 				</div> <!-- .row -->
 
 				<div class="colophon">Copyright 2014 Company name, Designed by Themezy. All rights reserved</div>
