@@ -50,6 +50,7 @@
    margin: 0; }
  
  a {
+  color: #ffaa3c;
    background: transparent; }
    a:focus {
      outline: thin dotted; }
@@ -534,7 +535,6 @@
  
  
  .container {
-   background: #7e1c65;
    margin-right: auto;
    margin-left: auto;
    padding-left: 15px;
@@ -1414,10 +1414,11 @@
    float: right;
    background: white;
    border-radius: 5px; }
+
    .main-navigation .menu-toggle, .main-navigation .menu, .main-navigation .search-form {
      display: inline-block;
      vertical-align: middle;
-
+    padding: 100 px;
     }
    .main-navigation .menu-toggle {
      color: #333;
@@ -1684,12 +1685,19 @@
   * Footer Styles
   */
  .site-footer {
-   padding: 50px 0; }
+   padding: 50px 0; 
+   font-size: 15px;
+
+  }
    .site-footer .widget {
+    font-size: 15px;
+
+     width:70 px;
            margin-left: 0;
      margin-bottom: 30px; }
    .site-footer .widget-title {
      color: #bec1c8;
+     font-size: 20px;
      font-weight: 300; }
    .site-footer .subscribe-form input[type="text"] {
      width: 100%;
@@ -1707,6 +1715,8 @@
        border-color: #ffaa3c; }
    .site-footer a {
      color: #84878d;
+          font-size: 20px;
+
      -webkit-transition: .3s ease;
              transition: .3s ease; }
      .site-footer a:hover {
@@ -2035,6 +2045,7 @@
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
+  color: #ffaa3c;
   position: fixed;
   top: 0;
   width: 100%;
@@ -2133,15 +2144,6 @@
   font-size: 22px;
 }
  
-.container {
-  background: #7e1c65;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  *zoom: 1; }
-
-
 
 
 
@@ -2244,16 +2246,17 @@ height: 70%;;
 }
 
 .left {
+  margin: 190 px;
   padding-top: 160px;
 
-  width: 10%;
+  width: 13%;
 }
 
 .right {
 
-  padding-left: 60px;
+  padding-left: 70px;
 
-  width: 80%;
+  width: 75%;
   height: 40%;
 }
 
