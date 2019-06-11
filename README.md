@@ -9,10 +9,13 @@ This code is for the front-end we will be using with our movie recommendations e
 
 alt text
 
-Features added:
+Modifications:
 ![alt text](img.png)
+![alt text](newFrontEnd.png)
+![alt text](newFrontEndBottom.png)
+![alt text](subscribe.png)
 
-![](images/newFrontEnd)
+
 
 # Header Section Controls:
 -Logo is added
